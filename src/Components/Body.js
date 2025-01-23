@@ -33,7 +33,7 @@ const Body = () => {
 
   const fetchfun = async () => {
     try {
-      const dataPromise = await fetch("https://dummyjson.co/recipes?limit=0", {
+      const dataPromise = await fetch("https://dummyjson.com/recipes?limit=0", {
         method: "GET",
       });
       const jsonObj = await dataPromise.json();
