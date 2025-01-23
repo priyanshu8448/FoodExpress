@@ -12,7 +12,7 @@ const dispatch = useDispatch();
 
 
 const getDish =async ()=>{
-    const Dish_Promise = await fetch(`https://dummyjson.co/recipes/${itemId}`);
+    const Dish_Promise = await fetch(`https://dummyjson.com/recipes/${itemId}`);
     const Dish = await Dish_Promise.json();
     setDishObj(Dish);
 }
